@@ -1,10 +1,10 @@
 
 public class ListCollection implements Collection{
 	
-	String[] countrynames;
+	String[] citiesname;
 	
 	public ListCollection() {
-		countrynames= new String[]{"Fes", "El Jadida", "Casablanca", "Khrouribga", "Tanger", "Rabat"};
+		citiesname = new String[]{"Fes", "El Jadida", "Casablanca", "Khrouribga", "Tanger", "Rabat"};
 	}
 
 	@Override
@@ -20,7 +20,7 @@ public class ListCollection implements Collection{
 		@Override
 		public boolean hasNext() {
 			// TODO Auto-generated method stub
-			return index<countrynames.length;
+			return index<citiesname.length;
 		}
 	
 		@Override
@@ -28,7 +28,7 @@ public class ListCollection implements Collection{
 			// TODO Auto-generated method stub
 
 	         if(this.hasNext()){
-	            return countrynames[index++];
+	            return citiesname[index++];
 	         }
 			return null;
 		}
