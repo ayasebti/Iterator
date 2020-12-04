@@ -23,8 +23,7 @@ public class TreeCollection implements Collection{
         gauche = g;
         droit = d;
         g.pere=this;
-        d.pere=this;
-        
+        d.pere=this;  
     }
 
     @Override
@@ -49,8 +48,7 @@ public class TreeCollection implements Collection{
             // TODO Auto-generated method stub
             while(st != fini && st != prefix)
                 getMore();
-            return st == prefix;
-            
+            return st == prefix; 
         }
         
         @Override
@@ -86,7 +84,6 @@ public class TreeCollection implements Collection{
                 }
             return r.valeur;
         }
-
     }
 
 }
